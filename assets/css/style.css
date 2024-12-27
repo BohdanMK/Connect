@@ -246,3 +246,81 @@ body {
         display: block;
     }
 }
+
+/*preloader*/
+
+#loverText > path {
+    transform: translateY(100%);
+    opacity: 0;
+    transition: none; /* Забираємо початкову затримку */
+}
+
+.active_loader #loverText > path {
+    animation: loverTextAnim 1.2s linear 0.8s forwards;
+}
+
+@keyframes loverTextAnim {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#upperText > path {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: none;
+}
+
+.active_loader #upperText > path {
+    animation: upperTextAnim 1.4s linear 0.5s forwards;
+}
+
+@keyframes upperTextAnim {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#logo {
+    stroke: #00192C;
+    stroke-width: .5;
+    fill-opacity: 0;
+    stroke-opacity: 1; /* Початкове значення видимості обведення */
+    stroke-dasharray: 800;
+    stroke-dashoffset: 800;
+}
+
+.active_loader #logo {
+    animation:
+        draw 1s linear forwards,
+        fill 0.5s linear 1s forwards,
+        fade-stroke 0.5s linear 1.5s forwards;
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill {
+    to {
+        fill-opacity: 1;
+    }
+}
+
+@keyframes fade-stroke {
+    to {
+        stroke-opacity: 0;
+    }
+}
