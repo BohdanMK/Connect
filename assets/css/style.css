@@ -1,0 +1,203 @@
+@import url('reset.css');
+@import url('../fonts/rubik/rubik.css');
+
+body {
+    direction: ltr;
+}
+
+
+
+.container {
+    width: 100%;
+    max-width: 1210px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.btn {
+    padding: 15px 30px;
+
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 25px;
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
+    cursor: pointer;
+
+    transition: all .2s linear;
+}
+
+.btn:hover {
+    transition: all .2s linear;
+}
+
+.main-slider .swiper-pagination-bullet, .custom-slider .swiper-pagination-bullet{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    background: transparent;
+
+    margin: 0 10px!important;
+}
+
+.main-slider .swiper-pagination-bullet-active, .custom-slider .swiper-pagination-bullet-active {
+    background: #fff;
+}
+
+/*custom swiper*/
+
+.custom-slider .swiper-pagination-bullet {
+    width: 25px;
+    height: 25px;
+}
+
+.custom-slider .swiper-pagination-bullet {
+    border: 1px solid #8D6AF7;
+}
+
+.custom-slider .swiper-pagination-bullet-active {
+    background: #8D6AF7;
+}
+
+.custom-slider .swiper-scrollbar {
+    display: none!important;
+}
+
+.custom-slider__btn:hover svg path {
+    fill: #8D6AF7;
+
+    transition: all .2s linear;
+}
+
+.custom-slider__btn svg path {
+
+
+    transition: all .2s linear;
+}
+
+/*header scroll*/
+
+.scroll-mode {
+    padding: 20px 0!important;
+    background: #fff;
+
+    transition: all .2s linear;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.scroll-mode .lang-block > a {
+    border-color: #000000;
+    color: #000;
+}
+
+.scroll-mode .lang-block > a > svg path {
+    fill: #000;
+}
+
+.scroll-mode .lang-block > a:hover > svg path {
+    fill: white;
+}
+
+.scroll-mode .lang-block > a:hover {
+    color: white;
+}
+
+.scroll-mode .btn--contact-us:hover {
+    color:black!important;
+    background: white!important;
+}
+
+.logo.logo--static {
+    display: block;
+}
+
+.logo.logo--scroll {
+    display: none;
+}
+
+.scroll-mode .logo.logo--static {
+    display: none;
+}
+
+.scroll-mode .logo.logo--scroll {
+    display: block;
+}
+
+
+.scroll-mode .btn.btn--contact-us {
+    background: #000;
+    color: #fff;
+}
+
+/*title*/
+
+.service-card:hover .triangle {
+    transition: all .23s linear;
+    opacity: 1;
+}
+
+.triangle {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 36.5px 29px 36.5px;
+    border-color: transparent transparent #fff transparent;
+
+    transition: all .23s linear;
+    filter: drop-shadow(0px 3px 180px rgba(46, 110, 222, 0.14));
+
+ }
+
+
+ /*card spoiler*/
+
+ .card-mob__content {
+
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.01s ease, height 0.2s ease, transform 0.3s ease;
+    position: absolute;
+    transform: scale(0);
+}
+
+.card-mob.active .card-mob__content {
+
+    height: auto;
+    opacity: 1;
+    pointer-events: all;
+    position: relative;
+    transform: scale(1);
+    transition: opacity 0.3s ease, height 0.2s ease, transform 0.3s ease;
+}
+
+/*footer*/
+
+.menu__block::after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 1px;
+
+    background: url(/assets/img/Line5.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+}
+
+.menu__block:last-of-type {
+    padding-right: 0!important;
+}
+
+.menu__block:last-of-type::after {
+    display: none;
+}
