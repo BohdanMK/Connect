@@ -110,6 +110,33 @@ function toggleCardMobSpoiler() {
 
 toggleCardMobSpoiler();
 
+//footer spoiler
+
+function toggleFooterMobSpoiler() {
+  if (window.innerWidth < 769) {
+    const toggleItemBtns = document.querySelectorAll('.menu__block-btn');
+    const toggleItems = document.querySelectorAll('.menu__block');
+
+    toggleItemBtns.forEach((item) => {
+      item.addEventListener('click', () => {
+        const targetBlock = item.closest('.menu__block');
+
+        if (targetBlock.classList.contains('active')) {
+          targetBlock.classList.remove('active');
+        } else {
+          toggleItems.forEach((block) => {
+            block.classList.remove('active');
+          });
+
+          targetBlock.classList.add('active');
+        }
+      });
+    });
+  }
+}
+
+toggleFooterMobSpoiler();
+
 // header scroll
 
 function initScrollHeader() {
@@ -119,14 +146,12 @@ function initScrollHeader() {
     const scrollY = window.scrollY || document.documentElement.scrollTop;
 
     if (scrollY > 0) {
-      // Якщо скролимо вниз (висота скролу більше 0)
       header.classList.add("scroll-mode");
     } else {
-      // Якщо повернулись до початку сторінки (висота скролу дорівнює 0)
       header.classList.remove("scroll-mode");
     }
   });
 }
 
-// Виклик функції
+
 initScrollHeader();

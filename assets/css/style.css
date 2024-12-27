@@ -201,3 +201,48 @@ body {
 .menu__block:last-of-type::after {
     display: none;
 }
+
+@media (max-width: 768px) {
+    .menu__block::after {
+        height: 1px;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        top: 100%;
+    }
+
+    .menu__block-list {
+        height: 0;
+
+        position: absolute;
+        z-index: -1;
+
+        pointer-events: none;
+        opacity: 0;
+        transition: all .2s linear;
+    }
+
+    .menu__block {
+        transition: all .2s linear;
+    }
+
+    .menu__block.active  {
+        padding-bottom: 20px;
+        transition: all .2s linear;
+    }
+
+    .menu__block.active .menu__block-list {
+        height: auto;
+
+        position: static;
+        z-index: 5;
+
+        pointer-events: all;
+        opacity: 1;
+        transition: all .2s linear;
+    }
+
+    .menu__block:last-of-type::after {
+        display: block;
+    }
+}
