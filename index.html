@@ -107,7 +107,9 @@
                     </div>
                     <!--tabs-->
                     <ul class="grid grid-cols-3 gap-[60px] relative z-[1] mb-[60px] lg:gap-[15px] md:hidden">
-                        <li class="p-[30px] service-card relative rounded-[15px]  hover:shadow-[0px_13px_30px_0px_#2E6EDE24] transition-all duration-300 hover:bg-white lg:p-[10px]">
+                        <!--item-->
+                        <li class="active p-[30px] service-card relative rounded-[15px]">
+                            <!--hover:shadow-[0px_13px_30px_0px_#2E6EDE24] transition-all duration-300 hover:bg-white lg:p-[10px]-->
                             <!--cardHead-->
                             <div class="flex gap-[14px] mb-[20px]">
                                 <div class="w-[64px] h-[64px] shrink-0">
@@ -154,7 +156,67 @@
                             </ul>
                             <!--cardAction-->
                             <button
-                                class="btn block px-[19px] py-[4px] mx-auto bg-transparent border-1 border-darkblue font-main text-[12px] leading-[166.6%] text-darkblue font-bold hover:bg-darkblue hover:text-white hover:shadow-lg"
+                                data-service="service1"
+                                class="btn btn--block block active px-[19px] py-[4px] mx-auto bg-transparent border-1 border-darkblue font-main text-[12px] leading-[166.6%] text-darkblue font-bold hover:bg-darkblue hover:text-white hover:shadow-lg"
+                                >
+                                More on Service
+                                </button>
+
+                            <!--hoverItem-->
+                            <div class="triangle absolute bottom-[-28px] left-[50%] transform rotate-180 translate-x-[-50%] opacity-0">
+
+                            </div>
+                        </li>
+                         <!--item-->
+                         <li class=" p-[30px] service-card relative rounded-[15px]">
+                            <!--cardHead-->
+                            <div class="flex gap-[14px] mb-[20px]">
+                                <div class="w-[64px] h-[64px] shrink-0">
+                                    <img src="assets/img/services/serv1.svg">
+                                </div>
+                                <h5 class="font-main text-[16px] leading-[125%] text-darkblue font-bold">Cloud services &
+                                    information security
+                                </h5>
+                            </div>
+                            <!--cardList-->
+                            <ul class="flex flex-col gap-[10px] mb-[40px]">
+                                <li class="relative flex items-center gap-[10px]  font-main text-[16px] leading-[125%] text-darkblue font-regular">
+                                    <span class="block h-[12px]">
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.50001 1.49998L2.50001 10.5C2.50029 10.5911 2.52543 10.6804 2.5727 10.7583C2.61997 10.8362 2.68759 10.8998 2.76828 10.9421C2.84898 10.9844 2.93969 11.0039 3.03065 10.9985C3.12161 10.9931 3.20938 10.963 3.28451 10.9115L9.78451 6.41148C10.054 6.22498 10.054 5.77598 9.78451 5.58898L3.28451 1.08898C3.20954 1.03689 3.12172 1.00635 3.03061 1.00066C2.9395 0.994979 2.84857 1.01437 2.76771 1.05674C2.68684 1.0991 2.61913 1.16282 2.57194 1.24096C2.52474 1.31911 2.49987 1.40869 2.50001 1.49998Z" fill="#A8C7FF"/>
+                                        </svg>
+                                    </span>
+                                    <span>Cyber and Information Security</span>
+                                </li>
+                                <li class="relative flex items-center gap-[10px]  font-main text-[16px] leading-[125%] text-darkblue font-regular">
+                                    <span class="block h-[12px]">
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.50001 1.49998L2.50001 10.5C2.50029 10.5911 2.52543 10.6804 2.5727 10.7583C2.61997 10.8362 2.68759 10.8998 2.76828 10.9421C2.84898 10.9844 2.93969 11.0039 3.03065 10.9985C3.12161 10.9931 3.20938 10.963 3.28451 10.9115L9.78451 6.41148C10.054 6.22498 10.054 5.77598 9.78451 5.58898L3.28451 1.08898C3.20954 1.03689 3.12172 1.00635 3.03061 1.00066C2.9395 0.994979 2.84857 1.01437 2.76771 1.05674C2.68684 1.0991 2.61913 1.16282 2.57194 1.24096C2.52474 1.31911 2.49987 1.40869 2.50001 1.49998Z" fill="#A8C7FF"/>
+                                        </svg>
+                                    </span>
+                                    <span> Virtualization</span>
+                                </li>
+                                <li class="relative flex items-center gap-[10px]  font-main text-[16px] leading-[125%] text-darkblue font-regular">
+                                    <span class="block h-[12px]">
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.50001 1.49998L2.50001 10.5C2.50029 10.5911 2.52543 10.6804 2.5727 10.7583C2.61997 10.8362 2.68759 10.8998 2.76828 10.9421C2.84898 10.9844 2.93969 11.0039 3.03065 10.9985C3.12161 10.9931 3.20938 10.963 3.28451 10.9115L9.78451 6.41148C10.054 6.22498 10.054 5.77598 9.78451 5.58898L3.28451 1.08898C3.20954 1.03689 3.12172 1.00635 3.03061 1.00066C2.9395 0.994979 2.84857 1.01437 2.76771 1.05674C2.68684 1.0991 2.61913 1.16282 2.57194 1.24096C2.52474 1.31911 2.49987 1.40869 2.50001 1.49998Z" fill="#A8C7FF"/>
+                                        </svg>
+                                    </span>
+                                    <span> Datacenters Maintenance</span>
+                                </li>
+                                <li class="relative flex items-center gap-[10px]  font-main text-[16px] leading-[125%] text-darkblue font-regular">
+                                    <span class="block h-[12px]">
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.50001 1.49998L2.50001 10.5C2.50029 10.5911 2.52543 10.6804 2.5727 10.7583C2.61997 10.8362 2.68759 10.8998 2.76828 10.9421C2.84898 10.9844 2.93969 11.0039 3.03065 10.9985C3.12161 10.9931 3.20938 10.963 3.28451 10.9115L9.78451 6.41148C10.054 6.22498 10.054 5.77598 9.78451 5.58898L3.28451 1.08898C3.20954 1.03689 3.12172 1.00635 3.03061 1.00066C2.9395 0.994979 2.84857 1.01437 2.76771 1.05674C2.68684 1.0991 2.61913 1.16282 2.57194 1.24096C2.52474 1.31911 2.49987 1.40869 2.50001 1.49998Z" fill="#A8C7FF"/>
+                                        </svg>
+                                    </span>
+                                    <span> Big Data</span>
+                                </li>
+                            </ul>
+                            <!--cardAction-->
+                            <button
+                                data-service="service2"
+                                class="btn btn--block block px-[19px] py-[4px] mx-auto bg-transparent border-1 border-darkblue font-main text-[12px] leading-[166.6%] text-darkblue font-bold hover:bg-darkblue hover:text-white hover:shadow-lg"
                                 >
                                 More on Service
                                 </button>
@@ -166,10 +228,32 @@
                         </li>
                     </ul>
                     <!--mainContent-->
-                    <ul class="md:hidden">
-                        <li class="flex gap-[20px] justify-between">
+                    <ul class="md:hidden relative">
+                        <li id="service1" class="active service-content flex gap-[20px] justify-between">
                             <div class="max-w-[476px] mt-[72px] lg:max-w-[376px] lg:mt-[42px]">
                                 <h2 class="mb-[20px] font-main text-[40px] leading-[116%] font-bold r text-lightblue md:text-[38px] md:mb-[10px] sm:text-[24px] lg:text-[30px]">Cloud Services and Information Security</h2>
+                                <h5 class="mb-[30px] font-main text-[20px] leading-[115%] font-bold text-[#000] sm:text-[16px]">On Salam Fiber Packages </h5>
+                                <div class="mb-[30px] font-main text-newGrey text-[18px] leading-[144%]">
+                                    <p>
+                                        Welcome to solutions that go beyond technology, powered by a dedicated team of specialists who believe that success depends on making your business ... their business.
+                                    </p>
+                                </div>
+                                <button
+                                    class="btn block w-fit px-[48px] py-[18px] bg-lightblue border-lightblue text-white font-bold text-[16px] uppercase leading-[116%]  hover:bg-white hover:text-lightblue hover:border-lightblue"
+                                    style="box-shadow: 0px 20px 30px 0px #0F23BD2E;"
+                                    >
+                                    Learn more
+                                </button>
+
+
+                            </div>
+                            <div class="max-w-[505px]">
+                                <img src="assets/img/services/service_main_1.png" alt="service_cloud_main">
+                            </div>
+                        </li>
+                        <li id="service2" class="service-content flex gap-[20px] justify-between">
+                            <div class="max-w-[476px] mt-[72px] lg:max-w-[376px] lg:mt-[42px]">
+                                <h2 class="mb-[20px] font-main text-[40px] leading-[116%] font-bold r text-lightblue md:text-[38px] md:mb-[10px] sm:text-[24px] lg:text-[30px]">Cloud Services and Information Security1234234</h2>
                                 <h5 class="mb-[30px] font-main text-[20px] leading-[115%] font-bold text-[#000] sm:text-[16px]">On Salam Fiber Packages </h5>
                                 <div class="mb-[30px] font-main text-newGrey text-[18px] leading-[144%]">
                                     <p>
@@ -366,7 +450,12 @@
             >
                 <div class="container">
                     <div class="section__title section__title--fl-blue mb-[30px] text-center m-auto">
-                        <h2 class="mb-[20px] font-main text-[48px] leading-[116%] font-bold text-center bg-gradient-to-r from-[#4B9DFF] via-[#9B60F6] to-[#9B60F6] bg-clip-text text-transparent md:text-[38px] md:mb-[10px] sm:text-[24px]">Service Beyond</h2>
+                        <h2 class="mb-[20px] font-main text-[48px] leading-[116%] font-bold text-center  md:text-[38px] md:mb-[10px] sm:text-[24px]"
+                        style=" background: linear-gradient(129.37deg, #4B9DFF 12.29%, #9B60F6 102.87%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        text-fill-color: transparent;"
+                        >Service Beyond</h2>
                         <h5 class="font-main text-[20px] leading-[115%] font-bold text-center text-[#000] sm:text-[16px]">On Connect Packages </h5>
                     </div>
                     <ul class="grid grid-cols-3 gap-[106px] py-[50px] border-lightGrey border-solid border-y-[1px] lg:gap-[46px] md:grid-cols-1 md:py-[20px] ">
@@ -511,7 +600,14 @@
                 data-aos="fade-up"
                 data-aos-duration="550">
                     <div class="section__title section__title--fl-blue mb-[30px] text-center m-auto">
-                        <h2 class="mb-[20px] font-main text-[48px] leading-[116%] font-bold r text-lightblue xl:text-[38px] md:mb-[10px] sm:text-[24px] lg:text-[30px] sm:text-[24px]"> <span class="text-[#000] ">Our</span> Clients</h2>
+                        <h2 class="mb-[20px] font-main text-[48px] text-[#000] leading-[116%] font-bold xl:text-[38px] md:mb-[10px] sm:text-[24px] lg:text-[30px] "
+
+                        >
+                        Our
+                        <span style=" background: linear-gradient(129.37deg, #4B9DFF 12.29%, #9B60F6 102.87%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        text-fill-color: transparent;">Clients</span></h2>
                         <h5 class="font-main text-[20px] leading-[115%] font-bold text-center text-[#000] sm:text-[16px]">On Salam Fiber Packages</h5>
                     </div>
                     <div class="relative">
@@ -582,7 +678,14 @@
             >
                 <div class="container">
                     <div class="section__title section__title--fl-blue mb-[30px] text-center m-auto">
-                        <h2 class="mb-[20px] font-main text-[48px] leading-[116%] font-bold r text-lightblue xl:text-[38px] md:mb-[10px] sm:text-[24px] lg:text-[30px] sm:text-[24px]"> <span class="text-[#000] ">Customers </span> Review</h2>
+                        <h2 class="mb-[20px] font-main text-[48px] leading-[116%] font-bold r text-lightblue xl:text-[38px] md:mb-[10px] sm:text-[24px] lg:text-[30px] sm:text-[24px]"
+                        > <span class="text-[#000] ">Customers </span>
+                        <span
+                            style=" background: linear-gradient(129.37deg, #4B9DFF 12.29%, #9B60F6 102.87%);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            text-fill-color: transparent;"
+                        >Review</span> </h2>
                         <h5 class="font-main text-[20px] leading-[115%] font-bold text-center text-[#000] sm:text-[16px]">On Salam Fiber Packages</h5>
                     </div>
                     <div class="relative">

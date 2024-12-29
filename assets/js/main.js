@@ -155,3 +155,34 @@ function initScrollHeader() {
 
 
 initScrollHeader();
+
+
+/// tabs
+
+function changeServeceTab() {
+
+
+  const tabItems = document.querySelectorAll('[data-service]');
+  const tabs = document.querySelectorAll('.service-card');
+  const tabsContent = document.querySelectorAll('.service-content');
+  const btns = document.querySelectorAll('.btn--block');
+
+  tabItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const tabId = item.getAttribute('data-service');
+        const targetContent = document.getElementById(tabId)
+        const targetBlock = item.closest('.service-card');
+
+        tabs.forEach(tab => tab.classList.remove('active'));
+        tabsContent.forEach(tabC => tabC.classList.remove('active'));
+        btns.forEach(btn => btn.classList.remove('active'));
+
+        item.classList.add('active');
+        targetBlock.classList.add('active');
+        targetContent.classList.add('active');
+
+      });
+  });
+}
+
+changeServeceTab();

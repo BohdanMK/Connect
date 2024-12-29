@@ -135,7 +135,7 @@ body {
 
 /*title*/
 
-.service-card:hover .triangle {
+.service-card:hover .triangle, .service-card.active .triangle {
     transition: all .23s linear;
     opacity: 1;
 }
@@ -323,4 +323,35 @@ body {
     to {
         stroke-opacity: 0;
     }
+}
+
+
+.service-card {
+    transition: all 0.3s ease;
+}
+
+
+.service-card.active {
+    box-shadow: 0px 13px 30px 0px #2E6EDE24; /* Тінь при наведенні або активному стані */
+    background-color: white; /* Фон при наведенні або активному стані */
+}
+
+.service-content {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    transform: scale(0) translateY(10px);
+    transition: opacity 0.4s linear, transform 0s linear; /
+}
+
+.service-content.active {
+    opacity: 1;
+    pointer-events: all;
+    position: static;
+    transform: scale(1) translateY(0);
+}
+
+.btn.btn--block.active {
+    background: #285E9F!important;
+    color: white!important;
 }
