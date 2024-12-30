@@ -6,7 +6,7 @@ const tailwindConfig = {
         lg: {'max': '991px'},
         md: {'max': '768px'},
         sm: {'max': '568px'},
-        xm: {'max': '378px'},
+        xm: {'max': '369px'},
       },
       extend: {
         fontFamily: {

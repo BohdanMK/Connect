@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="assets/plugins/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <script src="assets/plugins/tailwind/tailwind-config.js"></script>
+    <script src="assets/plugins/tailwind/tailwind.js"></script>
+    <script>
+        tailwind.config = tailwindConfig;
+    </script>
+    <link href="assets/css/style.css" rel="stylesheet">
+    <title>Connect, web site of internet provider company</title>
+</head>
+<body class="font-main h-full relative" >
+    <div class="page w-full h-full relative z-[1] bg-white flex flex-col overflow-hidden">
+        <!--scroll-mode-->
+        <header class="heeder fixed z-50 w-full pt-[41px] ">
+            <div class="container">
+                <nav class="flex items-center justify-between">
+                    <a href="/" class="sm:max-w-[122px] xm:max-w-[102px]">
+                        <img class="logo logo--static"
+                            src="assets/img/logo.svg" alt="logo">
+                        <img
+                            class="logo logo--scroll"
+                            src="assets/img/scroll_logo.svg" alt="logo">
+                    </a>
+                    <div class="lang-block flex items-center gap-[20px] md:gap-[7px]">
+                        <a class="btn flex items-start gap-[10px] rounded-[25px] bg-transparent border-2 px-[20px] text-white uppercase md:px-[13.5px] md:py-[13.5px] md:text-[12px] transition-all hover:text-white hover:bg-black hover:border-black">
+                            <span>
+                                En
+                            </span>
+                            <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.75 2.58329L1.24999 2.58329C1.17406 2.58353 1.09963 2.60447 1.03471 2.64386C0.969796 2.68326 0.916852 2.73961 0.88158 2.80685C0.846307 2.8741 0.830041 2.94969 0.834535 3.02549C0.839028 3.10129 0.864109 3.17443 0.907077 3.23704L4.65708 8.65371C4.81249 8.87829 5.18666 8.87829 5.34249 8.65371L9.0925 3.23704C9.1359 3.17456 9.16136 3.10139 9.16609 3.02546C9.17083 2.94953 9.15467 2.87376 9.11936 2.80637C9.08406 2.73898 9.03096 2.68256 8.96584 2.64323C8.90072 2.6039 8.82607 2.58317 8.75 2.58329Z" fill="white"/>
+                            </svg>
+                        </a>
+                        <ul>
+
+                        </ul>
+                        <a class="btn btn--contact-us rounded-[25px] text-black md:px-[21.5px] md:py-[13.5px] md:text-[12px] transition-all hover:text-white hover:bg-black hover:border-black">
+                            Contact Us
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main class="flex-auto">
+            <!--content-->
+            <section class="h-screen bg-cover bg-no-repeat bg-center flex justify-center items-center" style="background-image: url(assets/img/404/404.jpg);">
+                <div class="container">
+                    <div class=" h-full w-full text-center">
+                        <h1 class="mb-[30px] font-main font-bold text-[300px] text-white leading-[83%] md:text-[200px] sm:text-[120px]">404</h1>
+                        <div class="text-center">
+                            <h3 class="mb-[6px] font-main font-extrabold text-[32px] text-white uppercase leading-[80%] md:text-[20px]">ooops! Page not found!</h3>
+                            <p class="mb-[30px] font-main font-regular text-[14px] text-white">You may have mis-typed the URL. Or the page has been removed.</p>
+                            <a class="block mx-auto w-fit btn px-[69px] py-[24px] bg-pinkNew border-pinkNew text-white font-bold text-[24px] uppercase leading-[116%] xl:px-[60px] xl:py-[20px] xl:text-[18px] md:m-auto hover:bg-white hover:text-pinkNew hover:border-white">
+                                to the main page
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+    <script src="assets/plugins/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
